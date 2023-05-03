@@ -97,7 +97,7 @@ class PaymentTransaction(models.Model):
                 "pickup": True,
                 "address": {
                     "line1": order.partner_shipping_id.street,
-                    "line2": order.partner_shipping_id.street2,
+                    "line2": order.partner_shipping_id.street2 or "",
                     "city": order.partner_shipping_id.city,
                     "state": order.partner_shipping_id.state_id.name,
                     "postal_code": order.partner_shipping_id.zip,
