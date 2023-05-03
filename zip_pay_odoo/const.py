@@ -1,0 +1,3 @@
+SUPPORTED_CURRENCIES = [
+    'USD', 'AUD', 'CAD', 'NZD', 'MXN', 'ZAR',
+]

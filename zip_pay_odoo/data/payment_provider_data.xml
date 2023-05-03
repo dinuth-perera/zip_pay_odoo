@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo noupdate="1">
+
+    <record id="payment_provider_zippay" model="payment.provider">
+        <field name="code">zippay</field>
+        <field name="redirect_form_view_id" ref="redirect_form"/>
+        <field name="name">Zip Pay</field>
+
+        <field name="code">zippay</field>
+        <field name="company_id" ref="base.main_company" />
+        <field name="state">test</field>
+        <field name="image_128"
+               type="base64"
+               file="zip_pay_odoo/static/description/icon.png"/>
+        <field name="zippay_api_key">zippay_api_key</field>
+        <field name="zippay_public_key">zippay_public_key</field>
+    </record>
+
+</odoo>
